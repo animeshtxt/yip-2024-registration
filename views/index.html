@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!--<title>Registration Form in HTML CSS</title>-->
     <!---Custom CSS File--->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../public/style.css" />
   </head>
   <body>
     <section class="container">
@@ -17,17 +17,17 @@
             <h3>School Details *</h3>
             <div class="input-box">
                 <label>School Name:</label>
-                <input type="text" placeholder="Enter school's name" required />
+                <input type="text" placeholder="Enter school's name" name="school-name" required />
             </div>
 
             <div class="column">
                 <div class="input-box">
                     <label>School Email Address: </label><br>
-                    <input type="email" placeholder="Enter school's email address" required />
+                    <input type="email" placeholder="Enter school's email address" name="school-email" required />
                 </div>
                 <div class="input-box">
                     <label>School contact Number:</label><br>
-                    <input type="number" placeholder="Enter school's contact number" required />
+                    <input type="number" placeholder="Enter school's contact number" name="school-contact" required />
                 </div>
             </div>
             <div class="column">
@@ -36,11 +36,11 @@
             <div class="column">
                 <div class="input-box">
                     <label>State:</label><br>
-                    <input type="text" placeholder="Enter state name" required />  
+                    <input type="text" placeholder="Enter state name" name="school-state" required />  
                 </div>
                 <div class="input-box">
                     <label>Country:</label><br>
-                    <input type="text" placeholder="Enter country name" required />
+                    <input type="text" placeholder="Enter country name" name="school-country" required />
                 </div>                    
             </div>  
             
@@ -51,11 +51,11 @@
             <div class="column">
                 <div class="input-box">
                     <label>Team Name:</label><br>
-                    <input type="text" placeholder="Enter team's name" required />
+                    <input type="text" placeholder="Enter team's name" name="team-name" required />
                 </div>
                 <div class="input-box">
                     <label>Division: </label><br>
-                    <select name="division" id="division" >
+                    <select name="division" id="division" name="team-division">
                         <option value="senior">Senior</option>
                         <option value="junior">Junior</option>
                     </select>
@@ -64,7 +64,7 @@
             
             <div class="input-box">
                 <label>Problem statement: </label>
-                <select name="prob-statement" id="prob-statement">
+                <select name="prob-statement" id="prob-statement" name="team-prob-statement">
                     <option value="selecet">-- select --</option>
                     <option value="ps1">Problem Staement 1</option>
                     <option value="ps2">Problem Staement 2</option>
@@ -74,11 +74,11 @@
             <div class="column">
                 <div class="input-box">
                     <label>State:</label><br>
-                    <input type="text" placeholder="Enter state name" required />  
+                    <input type="text" placeholder="Enter state name" name="team-state" required />  
                 </div>
                 <div class="input-box">
                     <label>Country:</label><br>
-                    <input type="text" placeholder="Enter country name" required />
+                    <input type="text" placeholder="Enter country name" name="team-country" required />
                 </div>                    
             </div>            
         </div>
@@ -88,17 +88,17 @@
             <h3>Mentor Details *</h3>
             <div class="input-box">
                 <label>Mentor's Full Name:</label>
-                <input type="text" placeholder="Enter team's name" required />
+                <input type="text" placeholder="Enter team's name" name="mentor-name" required />
             </div>
 
             <div class="column">
                 <div class="input-box">
                     <label>Mentor's contact Number:</label><br>
-                    <input type="number" placeholder="Enter school's contact number" required />
+                    <input type="number" placeholder="Enter mentor's contact number" name="mentor-contact" required />
                 </div>
                 <div class="input-box">
                     <label>Mentor's Email Address: </label><br>
-                    <input type="email" placeholder="Enter mentor's email address" required />
+                    <input type="email" placeholder="Enter mentor's email address" name="mentor-email" required />
                 </div>
             </div>
                         
@@ -108,25 +108,25 @@
             <h3>Student 1 Details * </h3>
             <div class="input-box">
                 <label>Student 1 Full Name:</label>
-                <input type="text" placeholder="Enter student1 full name" required />
+                <input type="text" placeholder="Enter student 1's full name" name="stud-1-name" required />
             </div>
 
             <div class="column">
                 <div class="input-box">
                     <label>Student 1 contact Number:</label><br>
-                    <input type="number" placeholder="Enter Student 1's contact number" required />
+                    <input type="number" placeholder="Enter Student 1's contact number" name="stud-1-contact" required />
                 </div>
     
                 <div class="input-box">
                     <label>Student 1 Email Address: </label><br>
-                    <input type="email" placeholder="Enter student 1's email address" required />
+                    <input type="email" placeholder="Enter student 1's email address" name="stud-1-email" required />
                 </div> 
             </div>
             
 
             <div class="input-box"></div>
                 <label for="stud-1-grade">Grade:</label>
-                <select name="stud-1-grade" id="stud-1-grade">
+                <select name="stud-1-grade" id="stud-1-grade" name="stud-1-grade">
                     <option value="selecet">-- select --</option>
                     <option value="8">8th</option>
                     <option value="9">9th</option>
@@ -142,25 +142,25 @@
             <h3>Student 2 Details</h3>
             <div class="input-box">
                 <label>Student 2 Full Name:</label>
-                <input type="text" placeholder="Enter student1 full name" required />
+                <input type="text" placeholder="Enter student 2's full name" name="stud-2-name" />
             </div>
 
             <div class="column">
                 <div class="input-box">
                     <label>Student 2 contact Number:</label><br>
-                    <input type="number" placeholder="Enter Student 2's contact number" required />
+                    <input type="number" placeholder="Enter Student 2's contact number" name="stud-2-contact" />
                 </div>
     
                 <div class="input-box">
                     <label>Student 2 Email Address: </label><br>
-                    <input type="email" placeholder="Enter student 2's email address" required />
+                    <input type="email" placeholder="Enter student 2's email address" name="stud-2-email"  />
                 </div>
             </div>
              
 
             <div class="input-box"></div>
                 <label for="stud-2-grade">Grade:</label>
-                <select name="stud-2-grade" id="stud-2-grade">
+                <select name="stud-2-grade" id="stud-2-grade" name="stud-2-grade">
                     <option value="selecet">-- select --</option>
                     <option value="8">8th</option>
                     <option value="9">9th</option>
@@ -176,24 +176,24 @@
             <h3>Student 3 Details</h3>
             <div class="input-box">
                 <label>Student 3 Full Name:</label>
-                <input type="text" placeholder="Enter student1 full name" required />
+                <input type="text" placeholder="Enter student1 full name" name="stud-3-name"  />
             </div>
 
             <div class="column">
                 <div class="input-box">
                     <label>Student 3 contact Number:</label>
-                    <input type="number" placeholder="Enter Student 3's contact number" required />
+                    <input type="number" placeholder="Enter Student 3's contact number" name="stud-3-contact"  />
                 </div>
     
                 <div class="input-box">
                     <label>Student 3 Email Address: </label>
-                    <input type="email" placeholder="Enter student 2's email address" required />
+                    <input type="email" placeholder="Enter student 2's email address" name="stud-3-email"/>
                 </div>
             </div>
 
             <div class="input-box"></div>
                 <label for="stud-3-grade">Grade:</label>
-                <select name="stud-3-grade" id="stud-3-grade">
+                <select name="stud-3-grade" id="stud-3-grade" name="stud-3-grade">
                     <option value="selecet">-- select --</option>
                     <option value="8">8th</option>
                     <option value="9">9th</option>
