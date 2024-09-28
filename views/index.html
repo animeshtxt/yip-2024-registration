@@ -8,8 +8,10 @@
     <!--<title>Registration Form in HTML CSS</title>-->
     <!---Custom CSS File--->
     <link rel="stylesheet" href="../public/style.css" />
+    <link rel="icon" href="../public/assets/images/yip-logo.png">
   </head>
   <body>
+    <h1>Young Innovators' Program 2025 Registration</h1>
     <section class="container">
       <header>Registration Form</header>
       <form action="#" class="form">
@@ -84,7 +86,7 @@
         </div>
 
 
-        <div class="mentor-details info-block"></div>
+        <div class="mentor-details info-block">
             <h3>Mentor Details *</h3>
             <div class="input-box">
                 <label>Mentor's Full Name:</label>
@@ -139,7 +141,8 @@
         </div>
 
         <div class="stud-2-details info-block">
-            <h3>Student 2 Details</h3>
+           
+            <h3>Student 2 Details </h3>
             <div class="input-box">
                 <label>Student 2 Full Name:</label>
                 <input type="text" placeholder="Enter student 2's full name" name="stud-2-name" />
@@ -158,22 +161,29 @@
             </div>
              
 
-            <div class="input-box"></div>
-                <label for="stud-2-grade">Grade:</label>
-                <select name="stud-2-grade" id="stud-2-grade" name="stud-2-grade">
-                    <option value="selecet">-- select --</option>
-                    <option value="8">8th</option>
-                    <option value="9">9th</option>
-                    <option value="10">10th</option>
-                    <option value="11">11th</option>
-                    <option value="12">12th</option>
-                </select>
+            <div class="column">
+                <div class="input-box">
+                    <label for="stud-2-grade">Grade:</label>
+                    <select name="stud-2-grade" id="stud-2-grade" name="stud-2-grade">
+                        <option value="selecet">-- select --</option>
+                        <option value="8">8th</option>
+                        <option value="9">9th</option>
+                        <option value="10">10th</option>
+                        <option value="11">11th</option>
+                        <option value="12">12th</option>
+                    </select>
+                </div>
+                <div class="input-box remove">
+                    <span id="remove-stud-2-btn" class="remove-stud-btn">Remove Student</span>
+                </div>
             </div>  
                      
         </div>
 
         <div class="stud-3-details info-block">
-            <h3>Student 3 Details</h3>
+            
+            <h3>Student 3 Details </h3>
+
             <div class="input-box">
                 <label>Student 3 Full Name:</label>
                 <input type="text" placeholder="Enter student1 full name" name="stud-3-name"  />
@@ -191,23 +201,31 @@
                 </div>
             </div>
 
-            <div class="input-box"></div>
-                <label for="stud-3-grade">Grade:</label>
-                <select name="stud-3-grade" id="stud-3-grade" name="stud-3-grade">
-                    <option value="selecet">-- select --</option>
-                    <option value="8">8th</option>
-                    <option value="9">9th</option>
-                    <option value="10">10th</option>
-                    <option value="11">11th</option>
-                    <option value="12">12th</option>
-                </select>
-            </div>  
+            <div class="column">
+                <div class="input-box">
+                    <label for="stud-3-grade">Grade:</label>
+                    <select name="stud-3-grade" id="stud-3-grade" name="stud-3-grade">
+                        <option value="selecet">-- select --</option>
+                        <option value="8">8th</option>
+                        <option value="9">9th</option>
+                        <option value="10">10th</option>
+                        <option value="11">11th</option>
+                        <option value="12">12th</option>
+                    </select>
+                </div>
+                <div class="input-box remove">
+                    <span id="remove-stud-2-btn" class="remove-stud-btn">Remove Student</span>
+                </div>
+            </div> 
                      
         </div>
         <br>
-        <span id="add-stud-btn">Add Student</span>
+        <span id="add-stud-btn">+ Add Student</span>
         <button>Save & Proceed to payment</button>
       </form>
     </section>
+
+
+    <script src="../public/js/script.js"></script>
   </body>
 </html>
