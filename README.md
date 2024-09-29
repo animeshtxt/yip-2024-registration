@@ -1,5 +1,5 @@
-# yip-2025-registration
-This repsitory contains code for Young Innovators' Program 2025 registration webpage.
+# yip-2024-registration
+This repsitory contains code for Young Innovators' Program 2024 registration webpage.
 
 ### Naming conventions
 Collaborators are requsted to follow the following naming conventions for consistency while making changes to the codes or files
